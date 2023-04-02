@@ -1,6 +1,6 @@
-# gochan-tcp-bridge
+# GoChan-TCP-Bridge
 
-Gochan-tcp-bridge is a library which provides a simple, secure and efficient way to bridge Go channels over a TCP connection, with TLS support. It enables you to send and receive custom messages between a server and a client using Go channels.
+GoChan-TCP-Bridge is a library which provides a simple, secure and efficient way to bridge Go channels over a TCP connection, with TLS support. It enables you to send and receive custom messages between a server and a client using Go channels.
 
 ## Features
 
