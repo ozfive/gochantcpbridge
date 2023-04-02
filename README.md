@@ -15,7 +15,7 @@ Gochan-tcp-bridge is a library which provides a simple, secure and efficient way
 To install the library, use the following command:
 
 ```shell
-go get -u github.com/ozfive/gochanneltcpbridge
+go get -u github.com/ozfive/gochan-tcp-bridge
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ First, import the package:
 
 ```go
 import (
-	"github.com/ozfive/gochanneltcpbridge"
+	"github.com/ozfive/gochan-tcp-bridge"
 )
 ```
 
@@ -32,7 +32,7 @@ import (
 To create a server instance, use the NewServer function, providing the listening address, the certificate file, and the key file for TLS:
 
 ```go
-server, err := gochanneltcpbridge.NewServer("localhost:8000", "cert.pem", "key.pem")
+server, err := gochan-tcp-bridge.NewServer("localhost:8000", "cert.pem", "key.pem")
 if err != nil {
 	log.Fatal(err)
 }
@@ -41,7 +41,7 @@ if err != nil {
 To create a client instance, use the NewClient function, providing the remote server address and the certificate file for TLS:
 
 ```go
-client, err := gochanneltcpbridge.NewClient("localhost:8000", "cert.pem")
+client, err := gochan-tcp-bridge.NewClient("localhost:8000", "cert.pem")
 if err != nil {
 	log.Fatal(err)
 }
@@ -52,7 +52,7 @@ if err != nil {
 To send messages, use the Send function:
 
 ```go
-msg := gochanneltcpbridge.CustomMessage{
+msg := gochan-tcp-bridge.CustomMessage{
 	Type:    "example",
 	Content: "Hello, World!",
 }
